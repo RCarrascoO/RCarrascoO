@@ -57,10 +57,15 @@
 - Shell reactiva y minimalista construida con **Quickshell (Qt6 QML)** y módulos de soporte en **Go**.
 - *Nota:* En desarrollo activo y personalizado para hardware local, con hoja de ruta hacia soporte portable.
 
-#### 🔹 [iac-kvm-terraform-rocky](https://github.com/RCarrascoO/Sistemas_Proyecto_1)
+#### 🔹 [iac-kvm-terraform-rocky](https://github.com/RCarrascoO/iac-kvm-terraform-rocky)
 > **Infraestructura como Código (IaC) con virtualización KVM.**
 - Automatización integral del aprovisionamiento de infraestructura mediante **Terraform** y `libvirt` sobre **QEMU/KVM**.
 - Despliegue determinista de máquinas virtuales en **Rocky Linux 9** acompañado de runbooks interactivos en **Bash**.
+
+#### 🔹 [machine-learning-kalman-labs](https://github.com/RCarrascoO/machine-learning-kalman-labs)
+> **Laboratorios de Machine Learning, Filtros de Kalman y Estimación.**
+- Implementaciones en **Python / Scikit-Learn** de algoritmos de clustering (KMeans, MeanShift), regresión lineal y visualización de datos en 3D.
+- Modelado predictivo y seguimiento dinámico mediante **Filtro de Kalman** y fusión de sensores con filtro complementario.
 
 #### 🔹 [YamadaJarvis](https://github.com/RCarrascoO/YamadaJarvis)
 > **Asistente personal de voz en tiempo real.**
