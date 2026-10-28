@@ -11,9 +11,9 @@
 
 - 🎓 **Formación Académica:** Estudiante de Ingeniería Civil en Informática en la **Universidad Católica de Temuco (UCT)**, Chile.
 - 🎯 **Áreas de Interés:**
-  - **Desarrollo Backend:** Arquitectura de servicios, APIs robustas y procesamiento asíncrono.
-  - **Infraestructura & Sistemas:** Entornos Linux avanzados, virtualización (KVM/QEMU), automatización con Infraestructura como Código (IaC) y el ecosistema Wayland.
-  - **Inteligencia Artificial:** Integración de modelos LLM (Gemini API) en flujos de automatización, servicios locales y asistentes de voz.
+  - **Desarrollo Backend & Bots:** Arquitectura modular asíncrona, orquestación de servicios e interfaces conversacionales.
+  - **Infraestructura & Sistemas:** Entornos Linux de alto rendimiento, virtualización (KVM/QEMU), automatización con Infraestructura como Código (IaC) y desarrollo en Wayland.
+  - **Inteligencia Artificial Práctica:** Integración de modelos LLM multimodales (Gemini Live API, Gemini Flash, Vosk, TTS) en flujos de automatización y asistentes funcionales.
 - ⚙️ **Entorno Diario:** CachyOS / Arch Linux, compositor Wayland ([Niri](https://github.com/YaLTeR/niri)), Go, Python y contenedores Docker.
 
 ---
@@ -28,7 +28,7 @@
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 
-#### Sistemas & DevOps
+#### Sistemas, DevOps & Redes
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Arch Linux / CachyOS](https://img.shields.io/badge/CachyOS%20%2F%20Arch%20Linux-1793D1?style=flat-square&logo=archlinux&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
@@ -37,8 +37,10 @@
 ![Wayland](https://img.shields.io/badge/Wayland-FFAA00?style=flat-square&logo=wayland&logoColor=white)
 ![Systemd](https://img.shields.io/badge/Systemd-292929?style=flat-square&logo=systemd&logoColor=white)
 
-#### IA & Gestión de Datos
+#### IA, Datos & Frameworks
 ![Gemini API](https://img.shields.io/badge/Gemini_API-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
+![Discord.py](https://img.shields.io/badge/Discord.py-5865F2?style=flat-square&logo=discord&logoColor=white)
+![Telegram Bot](https://img.shields.io/badge/Telegram_Bot_API-26A5E4?style=flat-square&logo=telegram&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
@@ -48,36 +50,43 @@
 ### 🚀 Proyectos Destacados
 
 #### 🔹 [lilo-hub](https://github.com/RCarrascoO/lilo-hub)
-> **Hub de automatización personal y operaciones de servidor.**
-- Orquestado completamente con **Docker**, integrando **Gemini 2.5 Flash** para tareas y análisis de contexto.
-- Implementa control de energía mediante **Wake-on-LAN (WOL)**, sincronización continua y almacenamiento asíncrono sobre **SQLite**.
+> **Hub de automatización personal, orquestación de servidor y sincronización Obsidian.**
+- Bot asíncrono en **Python 3.12** orquestado con **Docker**, integrado con **Gemini Flash / Pro** para notas de voz y resúmenes.
+- Control de energía mediante **Wake-on-LAN (WOL)**, telemetría de recursos del servidor, monitoreo de cuotas y servidor **WebDAV** integrado.
 
 #### 🔹 [sane-shell](https://github.com/RCarrascoO/sane-shell)
-> **Shell de escritorio ultraligera para Niri en Wayland con Quickshell.**
-- Shell reactiva y minimalista construida con **Quickshell (Qt6 QML)** y módulos de soporte en **Go**.
-- *Nota:* En desarrollo activo y personalizado para hardware local, con hoja de ruta hacia soporte portable.
+> **Shell de escritorio ultraligera para el compositor Wayland Niri.**
+- Shell reactiva construida sobre **Quickshell (Qt6 QML)** con herramientas de alto rendimiento escritas en **Go** (`agy-tool`).
+- *Nota:* En desarrollo activo y optimizado para hardware local (dual-monitor, GPU AMD), con roadmap hacia soporte portable.
 
 #### 🔹 [iac-kvm-terraform-rocky](https://github.com/RCarrascoO/iac-kvm-terraform-rocky)
-> **Infraestructura como Código (IaC) con virtualización KVM.**
-- Automatización integral del aprovisionamiento de infraestructura mediante **Terraform** y `libvirt` sobre **QEMU/KVM**.
-- Despliegue determinista de máquinas virtuales en **Rocky Linux 9** acompañado de runbooks interactivos en **Bash**.
+> **Infraestructura como Código (IaC) con libvirt y virtualización QEMU/KVM.**
+- Aprovisionamiento automatizado de máquinas virtuales en **Rocky Linux 9** mediante **Terraform**.
+- Incluye runbooks interactivos en **Bash** para ciclo de vida completo (plan, apply, console access y limpieza determinista).
 
 #### 🔹 [machine-learning-kalman-labs](https://github.com/RCarrascoO/machine-learning-kalman-labs)
-> **Laboratorios de Machine Learning, Filtros de Kalman y Estimación.**
-- Implementaciones en **Python / Scikit-Learn** de algoritmos de clustering (KMeans, MeanShift), regresión lineal y visualización de datos en 3D.
-- Modelado predictivo y seguimiento dinámico mediante **Filtro de Kalman** y fusión de sensores con filtro complementario.
-
-#### 🔹 [YamadaJarvis](https://github.com/RCarrascoO/YamadaJarvis)
-> **Asistente personal de voz en tiempo real.**
-- Captura y reconocimiento de voz offline con **Vosk**, enlazado con la **Gemini Live API** para interacción natural y de baja latencia.
-- Contenedorizado con **Docker** para despliegue reproducible.
+> **Laboratorios de Machine Learning, Filtros de Kalman y Estimación Dinámica.**
+- Implementación en **Python / Scikit-Learn** de clustering (KMeans, MeanShift), regresión lineal y visualización 3D.
+- Modelado predictivo de trayectorias mediante **Filtro de Kalman** y fusión de sensores con filtro complementario.
 
 #### 🔹 [LinealApp_RDS](https://github.com/RCarrascoO/LinealApp_RDS)
-> **Aplicación interactiva de álgebra lineal y cálculo de cónicas.**
-- Herramienta académica para la UCT desarrollada en **TypeScript / Node.js**, con cálculo dinámico y parametrización mediante validación de RUT.
+> **Aplicación interactiva de álgebra lineal y análisis de cónicas.**
+- Herramienta académica para la UCT desarrollada en **TypeScript / Node.js**, con cálculo dinámico de cónicas y parametrización mediante validación de RUT.
 
-#### 🤝 Proyectos Colaborativos & Universitarios
-- Participación activa en iniciativas y metodologías ágiles de ingeniería de software universitaria (**Taller de Integración**), promoviendo buenas prácticas de arquitectura, control de versiones y trabajo en equipo.
+---
+
+### 🤖 Suite Yamada (Ecosistema de Asistentes & Bots)
+
+Ecosistema de asistentes modulares impulsados por Inteligencia Artificial y arquitecturas asíncronas:
+
+- 🎙️ **[YamadaJarvis](https://github.com/RCarrascoO/YamadaJarvis):** Asistente personal de voz en tiempo real. Combina escucha offline de palabras de activación con **Vosk**, streaming de audio bidireccional con **Gemini Live API** y despliegue modular en **Docker**.
+- 💬 **[YamadaCompanion](https://github.com/RCarrascoO/YamadaCompanion):** Asistente multimedia para Discord. Integra **Gemini AI**, streaming de música de alta fidelidad vía servidor **Lavalink**, síntesis de voz (TTS), memoria relacional en SQLite y control administrativo por roles.
+- 💰 **[YamadaFinance](https://github.com/RCarrascoO/YamadaFinance):** Gestor de finanzas personales en Telegram. Permite registro rápido de gastos en lenguaje natural, escaneo OCR de boletas/recibos mediante **Gemini Flash Vision**, presupuestos mensuales, suscripciones y exportación de reportes.
+
+---
+
+### 🤝 Proyectos Colaborativos & Universitarios
+- Participación activa en iniciativas y metodologías ágiles de ingeniería de software universitaria (**Taller de Integración**), promoviendo buenas prácticas de arquitectura, control de versiones Git y trabajo en equipo.
 
 ---
 
